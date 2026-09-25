@@ -79,7 +79,7 @@ if result:
     text = str(result.get("GET_TEXT"))
     in_lang = st.selectbox(
         "Selecciona el lenguaje de Entrada",
-        ("Inglés", "Español", "Bengali", "Coreano", "Mandarín", "Japonés"),
+        ("Inglés", "Español", "Portugués", "Coreano", "Mandarín", "Japonés"),
     )
     if in_lang == "Inglés":
         input_language = "en"
@@ -96,7 +96,7 @@ if result:
     
     out_lang = st.selectbox(
         "Selecciona el lenguaje de salida",
-        ("Inglés", "Español", "Bengali", "Coreano", "Mandarín", "Japonés"),
+        ("Inglés", "Español", "Portugués", "Coreano", "Mandarín", "Japonés"),
     )
     if out_lang == "Inglés":
         output_language = "en"
@@ -115,6 +115,7 @@ if result:
         "Selecciona el acento",
         (
             "Defecto",
+            "Portugués",
             "Español",
             "Reino Unido",
             "Estados Unidos",
@@ -129,7 +130,9 @@ if result:
         tld = "com"
     elif english_accent == "Español":
         tld = "com.mx"
-    
+    elif english_accent == "Portugués":
+        tld = "com.br"
+
     elif english_accent == "Reino Unido":
         tld = "co.uk"
     elif english_accent == "Estados Unidos":
