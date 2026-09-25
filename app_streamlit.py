@@ -89,8 +89,8 @@ if result:
         input_language = "pt"
     elif in_lang == "Coreano":
         input_language = "ko"
-    elif in_lang == "Mandarín":
-        input_language = "zh-cn"
+    elif in_lang == "Indonesio":
+        input_language = "id"
     elif in_lang == "Japonés":
         input_language = "ja"
     
@@ -106,6 +106,8 @@ if result:
         output_language = "pt"
     elif out_lang == "Coreano":
         output_language = "ko"
+    elif out_lang == "Indonesio":
+        output_language = "id"
     elif out_lang == "Mandarín":
         output_language = "zh-cn"
     elif out_lang == "Japonés":
@@ -115,6 +117,7 @@ if result:
         "Selecciona el acento",
         (
             "Defecto",
+            "Indonesio",
             "Portugues",
             "Español",
             "Reino Unido",
@@ -130,6 +133,8 @@ if result:
         tld = "com"
     elif english_accent == "Español":
         tld = "com.mx"
+    elif english_accent == "Indonesio":
+        tld = "co.id"
     elif english_accent == "Portugues":
         tld = "com.br"
     elif english_accent == "Reino Unido":
