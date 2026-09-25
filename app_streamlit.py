@@ -85,8 +85,8 @@ if result:
         input_language = "en"
     elif in_lang == "Español":
         input_language = "es"
-    elif in_lang == "Bengali":
-        input_language = "bn"
+    elif in_lang == "Portugués":
+        input_language = "pt"
     elif in_lang == "Coreano":
         input_language = "ko"
     elif in_lang == "Mandarín":
@@ -102,8 +102,8 @@ if result:
         output_language = "en"
     elif out_lang == "Español":
         output_language = "es"
-    elif out_lang == "Bengali":
-        output_language = "bn"
+    elif out_lang == "Portugués":
+        output_language = "pt"
     elif out_lang == "Coreano":
         output_language = "ko"
     elif out_lang == "Mandarín":
